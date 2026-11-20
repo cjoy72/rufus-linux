@@ -1,0 +1,12 @@
+[Desktop Entry]
+Type=Application
+Name=Rufus
+Name[da]=Rufus
+Comment=Create bootable USB flash drives and format removable disks
+Comment[da]=Opret opstartbare USB-drev og formatér flytbare diske
+Exec=rufus-linux %f
+Icon=rufus-linux
+Terminal=false
+Categories=System;Utility;
+MimeType=application/x-cd-image;application/x-raw-disk-image;
+StartupWMClass=rufus-linux

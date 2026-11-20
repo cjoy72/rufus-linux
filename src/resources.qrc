@@ -1,0 +1,14 @@
+<RCC>
+    <qresource prefix="/">
+        <file alias="Main.qml">Main.qml</file>
+        <file alias="i18n/en.json">i18n/en.json</file>
+        <file alias="i18n/da.json">i18n/da.json</file>
+        <file alias="assets/uefi/uefi-ntfs.img">../assets/uefi/uefi-ntfs.img</file>
+        <file alias="assets/freedos/COMMAND.COM">../assets/freedos/COMMAND.COM</file>
+        <file alias="assets/freedos/KERNEL.SYS">../assets/freedos/KERNEL.SYS</file>
+        <file alias="assets/freedos/DISPLAY.EXE">../assets/freedos/DISPLAY.EXE</file>
+        <file alias="assets/freedos/KEYB.EXE">../assets/freedos/KEYB.EXE</file>
+        <file alias="assets/freedos/KEYBOARD.SYS">../assets/freedos/KEYBOARD.SYS</file>
+        <file alias="assets/freedos/MODE.COM">../assets/freedos/MODE.COM</file>
+    </qresource>
+</RCC>

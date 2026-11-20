@@ -1,0 +1,27 @@
+pkgname=rufus-linux
+pkgver=1.0.0
+pkgrel=1
+pkgdesc='Bootable USB creator and disk formatter for Linux, recreated from Rufus'
+arch=('x86_64' 'aarch64')
+license=('GPL-3.0-or-later')
+depends=('qt6-base' 'qt6-declarative' 'qt6-wayland' 'xdg-desktop-portal'
+         'libarchive' 'util-linux' 'dosfstools' 'exfatprogs' 'e2fsprogs'
+         'ntfs-3g' 'parted' 'polkit')
+optdepends=('udftools: format drives as UDF')
+makedepends=('gcc' 'make')
+source=()
+sha256sums=()
+
+build() {
+  cd "$startdir/.."
+  ./bin/build
+}
+
+package() {
+  cd "$startdir/.."
+  install -Dm755 build/rufus-linux "$pkgdir/usr/bin/rufus-linux"
+  install -Dm644 LICENSE "$pkgdir/usr/share/licenses/$pkgname/LICENSE"
+  install -Dm644 "$startdir/rufus-linux.svg" "$pkgdir/usr/share/icons/hicolor/scalable/apps/rufus-linux.svg"
+  install -Dm644 "$startdir/rufus-linux.desktop" "$pkgdir/usr/share/applications/rufus-linux.desktop"
+  install -Dm644 "$startdir/org.omarchy.rufus-linux.policy" "$pkgdir/usr/share/polkit-1/actions/org.omarchy.rufus-linux.policy"
+}
