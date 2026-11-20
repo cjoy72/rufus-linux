@@ -6,7 +6,7 @@ arch=('x86_64' 'aarch64')
 license=('GPL-3.0-or-later')
 depends=('qt6-base' 'qt6-declarative' 'qt6-wayland' 'xdg-desktop-portal'
          'libarchive' 'util-linux' 'dosfstools' 'exfatprogs' 'e2fsprogs'
-         'ntfs-3g' 'parted' 'polkit')
+         'ntfs-3g' 'ntfsprogs' 'parted' 'polkit')
 optdepends=('udftools: format drives as UDF')
 makedepends=('gcc' 'make')
 source=()

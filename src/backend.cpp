@@ -31,7 +31,7 @@ QString mkfsCommandFor(const QString &fs) {
 }
 
 QString packageHintFor(const QString &cmd) {
-    if (cmd == "mkfs.ntfs") return "ntfs-3g";
+    if (cmd == "mkfs.ntfs") return "ntfsprogs";
     if (cmd == "mkudffs") return "udftools";
     if (cmd == "mkfs.exfat") return "exfatprogs";
     if (cmd == "mkfs.vfat") return "dosfstools";
